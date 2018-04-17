@@ -1,0 +1,19 @@
+{
+  "name": "ssb-electroparty-client",
+  "version": "1.0.0",
+  "browserify": {
+    "transform": [
+      "envify"
+    ]
+  },
+  "author": "Jan Bölsche <jan@lagomorph.de> (http://regular.codes)",
+  "license": "MIT",
+  "devDependencies": {
+    "envify": "^4.1.0",
+    "jsonfilter": "^1.1.2"
+  },
+  "dependencies": {
+    "ssb-client": "^4.5.1",
+    "ssb-keys": "^7.0.14"
+  }
+}
