@@ -87,8 +87,9 @@ function _getContext() {
   }
   const fromStorage = localStorage['electroparty-config']
   if (fromStorage) {
-    console.log('ep: config from localStorage', ret)
     ret = urlDecode(fromStorage)
+    ret.keys = ret.keys || ssbKeys.loadOrCreateSync('electroparty-keys')
+    console.log('ep: config from localStorage', ret)
     return ret
   }
   throw new Error('ssb-electroparty did not find config data. D:')
